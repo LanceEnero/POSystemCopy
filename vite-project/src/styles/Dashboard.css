@@ -15,7 +15,7 @@
 
 .dashboard-title {
   margin: 0;
-  color: #1e40af;
+  color: #105e23;
   font-size: clamp(24px, 2.5vw, 32px);
   font-weight: 700;
   line-height: 1.25;
@@ -116,7 +116,7 @@
   width: 100%;
   min-width: 0;
   padding: 10px 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #d1dbd3;
   border-radius: 8px;
   background: #ffffff;
   color: #111827;
@@ -125,7 +125,7 @@
 }
 
 .dashboard-search:focus {
-  border-color: #3b82f6;
+  border-color: #27af0f;
   outline: 2px solid #dbeafe;
   outline-offset: 1px;
 }

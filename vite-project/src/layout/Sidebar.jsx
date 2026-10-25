@@ -14,22 +14,22 @@ const navigation = [
     end: true,
   },
   {
-    label: "Purchase Request Form",
+    label: "Organizations",
     path: "/purchaseOrder/PurchaseRequestForm",
     icon: FileText,
   },
   {
-    label: "Purchase Order",
+    label: "Membership",
     path: "/purchaseOrder/PurchaseOrders",
     icon: FileText,
   },
   {
-    label: "Delivery Request",
+    label: "Budget Management",
     path: "/purchaseOrder/DeliveryRequest",
     icon: FileText,
   },
   {
-    label: "Suppliers",
+    label: "Income & Expenses",
     path: "/SupplierPage",
     icon: Building2,
   },
