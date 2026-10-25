@@ -1,5 +1,6 @@
 
 import React from "react";
+import { useNavigate } from "react-router";
 import "./styles/login.css";
 
 import membership from "./assets/membership.png";
@@ -8,6 +9,15 @@ import hat from "./assets/hat.png";
 import pad from "./assets/pad.png";
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+
+    // Redirect to your existing Dashboard route
+    navigate("/");
+  };
+
   return (
     <div className="portal-page">
       <div className="portal-card">
@@ -32,11 +42,12 @@ function Login() {
           />
 
           <h1>Login</h1>
+
           <p className="login-subtitle">
             Sign in to your student account
           </p>
 
-          <form action="/erp.php" method="POST">
+          <form onSubmit={handleLogin}>
             <label htmlFor="student_number">
               Student Number
             </label>
@@ -54,7 +65,9 @@ function Login() {
               />
             </div>
 
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">
+              Password
+            </label>
 
             <div className="input-box">
               <img src={pad} alt="" className="field-icon" />
@@ -84,7 +97,10 @@ function Login() {
               </a>
             </div>
 
-            <button type="submit" className="login-button">
+            <button
+              type="submit"
+              className="login-button"
+            >
               Login
             </button>
           </form>

@@ -18,11 +18,11 @@ function App() {
   return (
     <Routes>
       {/* Login page - outside AppLayout */}
-      <Route path="/login" element={<Login />} />
+      <Route path='/login' element={<Login />} />
 
       {/* Existing application pages */}
       <Route path="/" element={<AppLayout />}>
-        <Route path='' element={<Dashboard />} />
+       <Route index element={<Dashboard />} />
 
         <Route
           path="purchaseOrder/PurchaseRequestForm"
