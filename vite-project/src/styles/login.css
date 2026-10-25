@@ -1,0 +1,206 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portal-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #0b1f4d, #1769aa, #48b4d8);
+}
+
+.portal-card {
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+.portal-header {
+  padding: 28px 20px;
+  text-align: center;
+  background: #f0f7ff;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.membership-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.portal-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.membership {
+  color: #123b75;
+  font-size: 25px;
+}
+
+.fee {
+  color: #1685c5;
+  font-size: 20px;
+}
+
+.login-content {
+  padding: 30px 34px 24px;
+}
+
+.lock-icon {
+  display: block;
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+.login-content h1 {
+  margin: 8px 0;
+  text-align: center;
+  color: #17365f;
+  font-size: 30px;
+}
+
+.login-subtitle {
+  margin: 0 0 28px;
+  text-align: center;
+  color: #718096;
+  font-size: 14px;
+}
+
+.login-content form > label {
+  display: block;
+  margin: 18px 0 9px;
+  color: #243b53;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 14px;
+  min-height: 52px;
+  border: 1px solid #d5dfeb;
+  border-radius: 10px;
+  background: #f9fbff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-box:focus-within {
+  border-color: #1685c5;
+  box-shadow: 0 0 0 3px rgba(22, 133, 197, 0.12);
+}
+
+.field-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.input-box input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #243b53;
+  font-size: 14px;
+}
+
+.input-box input::placeholder {
+  color: #9aa9ba;
+}
+
+.remember-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 20px 0 24px;
+  font-size: 12px;
+}
+
+.remember-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #52657a;
+  cursor: pointer;
+}
+
+.remember-label input {
+  accent-color: #1769aa;
+}
+
+.remember-row a {
+  color: #1769aa;
+  text-decoration: none;
+}
+
+.remember-row a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #1456a0, #168dcc);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(20, 86, 160, 0.25);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.portal-footer {
+  margin: 25px 0 0;
+  text-align: center;
+  color: #98a6b7;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .login-content {
+    padding: 26px 22px 22px;
+  }
+
+  .membership {
+    font-size: 22px;
+  }
+
+  .fee {
+    font-size: 18px;
+  }
+}
