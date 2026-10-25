@@ -1,0 +1,5 @@
+@import "tailwindcss";
+body { margin: 0; padding: 0; }
+.app-main { min-height: 100vh; padding: 90px 24px 24px; background: #fff; }
+@media (min-width: 640px) { .app-main { margin-left: 256px; } }
+.dashboard-page { font-size: 24px; }

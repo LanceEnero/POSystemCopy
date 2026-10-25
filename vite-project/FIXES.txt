@@ -1,0 +1,5 @@
+Navigation URLs now match App routes; corrected PO details link and back button.
+Layout spacing is managed in .app-main; removed Dashboard page offsets.
+Delivery Request has placeholder content; Suppliers and Reports have placeholder routes.
+Purchase Request Form remains the original heading-only page.
+Run npm install then npm run dev. Run npm run build for production output.

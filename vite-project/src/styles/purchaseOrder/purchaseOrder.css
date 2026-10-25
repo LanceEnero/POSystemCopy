@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.main-container {
+    @apply gap-4;
+}
+
+@utility order-container {
+    @apply min-h-[calc(100vh-5rem)] bg-white p-6 border-b border-solid;
+}
